@@ -6,7 +6,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 })
 export class SettingsService {
   constructor(private http: HttpClient) {
-    http.get('https://gorest.co.in/public-api/users?access-token=DIaiqIfU8CU1tSHR1qYWCVd6-RSRo1q7ZIdT')
+    http.get('/assets/config.json')
       .subscribe(x => console.log(x));
   }
 }
